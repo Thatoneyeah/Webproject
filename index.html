@@ -1,12 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <title class="magenta-text">Kasane Teto</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" >
-  <link href="style.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kasane Teto ♡ Ultimate Cute Shrine</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Fredoka',sans-serif;
+  background:linear-gradient(135deg,#ffb6e6,#ff7eb9,#ffa6f6);
+  background-size:400% 400%;
+  animation:gradientShift 12s ease infinite;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+@keyframes gradientShift{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* Floating hearts */
+body::before{
+  content:"💗 💖 💕 💓 💞";
+  position:fixed;
+  font-size:80px;
+  width:100%;
+  animation:floatHearts 20s linear infinite;
+  opacity:0.2;
+  pointer-events:none;
+}
+
+@keyframes floatHearts{
+  from{transform:translateY(100vh);}
+  to{transform:translateY(-200vh);}
+}
+
+/* NAV */
+nav{
+  position:fixed;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:20px;
+  background:rgba(255,255,255,0.3);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+nav a{
+  text-decoration:none;
+  color:#ff1493;
+  font-weight:700;
+  font-size:18px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  transform:scale(1.2);
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding-top:100px;
+}
+
+.hero h1{
+  font-family:'Baloo 2',cursive;
+  font-size:4rem;
+  animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-15px);}
+}
+
+.hero img{
+  width:250px;
+  margin-top:20px;
+  animation:spinSlow 10s linear infinite;
+}
+
+@keyframes spinSlow{
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
+
+/* SECTION */
+section{
+  padding:100px 10%;
+}
+
+.card{
+  background:rgba(255,255,255,0.3);
+  padding:30px;
+  border-radius:30px;
+  margin-bottom:40px;
+  backdrop-filter:blur(15px);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+/* SONGS */
+.song-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+iframe{
+  width:100%;
+  border-radius:20px;
+}
+
+/* VERSIONS */
+.version-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.version-card{
+  background:rgba(255,255,255,0.4);
+  padding:20px;
+  border-radius:20px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.version-card:hover{
+  transform:rotate(-2deg) scale(1.05);
+}
+
+.version-card img{
+  width:150px;
+  margin-bottom:15px;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.1);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px;
+  font-weight:600;
+}
+
+</style>
 </head>
 <body>
-  <h1>Teto is my goat</h1>
+
+<nav>
+  <a href="#about">About 💗</a>
+  <a href="#songs">Songs 🎵</a>
+  <a href="#versions">All Versions ✨</a>
+  <a href="#gallery">Gallery 🖼️</a>
+</nav>
+
+<div class="hero">
+  <h1>KASANE TETO ♡</h1>
+  <p>The Best Idol Ever 🍞✨</p>
+  <img src="https://www.google.com/imgres?q=teto%20utau%20image&imgurl=https%3A%2F%2Flookaside.instagram.com%2Fseo%2Fgoogle_widget%2Fcrawler%2F%3Fmedia_id%3D3780225866224465040&imgrefurl=https%3A%2F%2Fwww.instagram.com%2Fp%2FDR2D2WXDXSQ%2F&docid=9-q-dJiToRlxFM&tbnid=umCChN40NuvROM&vet=12ahUKEwiIlu6ogfiSAxUGJkQIHRloGiYQnPAOegQIJhAB..i&w=1440&h=1669&hcb=2&ved=2ahUKEwiIlu6ogfiSAxUGJkQIHRloGiYQnPAOegQIJhABB">
+</div>
+
+<section id="about">
+  <div class="card">
+    <h2>About Teto 💕</h2>
+    <p>
+      Born as an April Fool’s joke in 2008, Teto became one of the most beloved UTAU characters ever.
+      She is energetic, mischievous, dramatic, and absolutely convinced she is the #1 idol in the universe.
+      She loves baguettes. She denies being 31. She is perfect.
+    </p>
+  </div>
+</section>
+
+<section id="songs">
+  <div class="card">
+    <h2>Iconic Songs 🎀</h2>
+    <div class="song-grid">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/3tmd-ClpJxA" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="versions">
+  <div class="card">
+    <h2>All Teto Versions ✨</h2>
+    <div class="version-grid">
+
+      <div class="version-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Kasane_Teto.png">
+        <h3>UTAU Original</h3>
+        <p>The classic voicebank that started it all.</p>
+      </div>
+
+      <div class="version-card">
+        <img src="https://static.wikia.nocookie.net/vocaloid/images/6/63/Teto_Illustration.png">
+        <h3>SynthV AI</h3>
+        <p>Her powerful modern AI voicebank upgrade.</p>
+      </div>
+
+      <div class="version-card">
+        <img src="https://static.wikia.nocookie.net/vocaloid/images/5/52/Teto_Render.png">
+        <h3>Kasane Teto SV</h3>
+        <p>Updated design with sharper, polished idol energy.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="card">
+    <h2>Teto Everywhere 💖</h2>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Kasane_Teto.png">
+      <img src="https://static.wikia.nocookie.net/vocaloid/images/f/fb/Teto_Fanart.png">
+      <img src="https://static.wikia.nocookie.net/vocaloid/images/6/63/Teto_Illustration.png">
+      <img src="https://static.wikia.nocookie.net/vocaloid/images/5/52/Teto_Render.png">
+    </div>
+  </div>
+</section>
+
+<footer>
+  💗 THE ULTIMATE TETO SHRINE 🍞✨ | 2026 💗
+</footer>
+
 </body>
 </html>
